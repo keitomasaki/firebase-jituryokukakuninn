@@ -38,10 +38,10 @@ export const test = () => {
 //     .then(console.log("firebasesubmitsikou"));
 // };
 
-export const firebaeDelete = (id) => {
-  console.log("dlete");
-  db.collection("text").doc("111").delete().then(console.log("deleteseikou"));
-};
+// export const firebaeDelete = (id) => {
+//   console.log("dlete");
+//   db.collection("text").doc("1848").delete().then(console.log("deleteseikou"));
+// };
 
 export const firebaseUpdate = () => {
   db.collection("text").doc("111").update({

@@ -1,22 +1,18 @@
-import React, { useState } from "react";
-import { test } from "../reducks/test1/action";
+import React from "react";
 import { useDispatch } from "react-redux";
 import TextInput2 from "./TextInput2";
+import { push } from "connected-react-router";
 
 const Login = () => {
   const dispatch = useDispatch();
 
-  const [count, setCount] = useState(0);
-
-  const test1 = () => {
-    dispatch(test());
-    setCount(count + 1);
+  const toSignUp = () => {
+    dispatch(push("/SignUp"));
   };
   return (
     <div>
       <h3>signin</h3>
-      <button onClick={test1}>button</button>
-      <p data-testid="count">{count}</p>
+      <button onClick={toSignUp}>signup</button>
       <TextInput2 />
     </div>
   );

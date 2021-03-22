@@ -20,11 +20,13 @@ const TextInput = () => {
 
   return (
     <div>
-      <input type="text" onChange={changePassword}></input>
-      <input type="text" onChange={changeEmail}></input>
-      <input type="text" />
-      <input type="text" />
-      <button onClick={() => dispatch(signUp(email, password))}>button</button>
+      <input
+        type="text"
+        placeholder="password"
+        onChange={changePassword}
+      ></input>
+      <input type="text" placeholder="email" onChange={changeEmail}></input>
+      <button onClick={() => dispatch(signUp(email, password))}>signup</button>
     </div>
   );
 };
